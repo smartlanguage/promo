@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Redirecting...</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+        }
+        .loader {
+            text-align: center;
+        }
+        .spinner {
+            border: 4px solid rgba(255, 255, 255, 0.3);
+            border-top: 4px solid white;
+            border-radius: 50%;
+            width: 40px;
+            height: 40px;
+            animation: spin 1s linear infinite;
+            margin: 0 auto 20px;
+        }
+        @keyframes spin {
+            0% { transform: rotate(0deg); }
+            100% { transform: rotate(360deg); }
+        }
+    </style>
+</head>
+<body>
+    <div class="loader">
+        <div class="spinner"></div>
+        <p>Redirecting...</p>
+    </div>
+
+    <script>
+        const links = {
+            'uk': 'https://www.dpbolvw.net/click-101443244-15428326',      // UA (Ukrainian)
+            'id': 'https://www.jdoqocy.com/click-101443244-15428312',      // ID (Indonesian)
+            'no': 'https://www.jdoqocy.com/click-101443244-15428316',      // NO (Norwegian)
+            'pl': 'https://www.dpbolvw.net/click-101443244-15428317',      // PL (Polish)
+            'ro': 'https://www.dpbolvw.net/click-101443244-15428320',      // RO (Romanian)
+            'fi': 'https://www.jdoqocy.com/click-101443244-15428307',      // FI (Finnish)
+            'cs': 'https://www.anrdoezrs.net/click-101443244-15711387',    // CZ (Czech)
+            'th': 'https://www.jdoqocy.com/click-101443244-15428324',      // TH (Thai)
+            'pt': 'https://www.tkqlhce.com/click-101443244-15428319',      // PT-BR (Portuguese)
+            'es': 'https://www.jdoqocy.com/click-101443244-15428322',      // ES (Spanish)
+            'nl': 'https://www.tkqlhce.com/click-101443244-15428306',      // NL (Dutch)
+            'en': 'https://www.anrdoezrs.net/click-101443244-15428302',    // EN (English)
+            'sv': 'https://www.dpbolvw.net/click-101443244-15428323',      // SE (Swedish)
+            'he': 'https://www.tkqlhce.com/click-101443244-15428310',      // HE (Hebrew)
+            'tr': 'https://www.anrdoezrs.net/click-101443244-15428325',    // TR (Turkish)
+            'hr': 'https://www.anrdoezrs.net/click-101443244-15711388',    // HR (Croatian)
+            'ko': 'https://www.jdoqocy.com/click-101443244-15428315',      // KO (Korean)
+            'ja': 'https://www.kqzyfj.com/click-101443244-15428314',       // JA (Japanese)
+            'hu': 'https://www.anrdoezrs.net/click-101443244-15428311',    // HU (Hungarian)
+            'ar': 'https://www.dpbolvw.net/click-101443244-15428303',      // AR (Arabic)
+            'zh': 'https://www.kqzyfj.com/click-101443244-15428304',       // ZH (Chinese)
+            'de': 'https://www.anrdoezrs.net/click-101443244-15428309',    // DE (German)
+            'ru': 'https://www.tkqlhce.com/click-101443244-15428321',      // RU (Russian)
+            'fr': 'https://www.dpbolvw.net/click-101443244-15428308',      // FR (French)
+            'da': 'https://www.dpbolvw.net/click-101443244-15428305',      // DA (Danish)
+            'it': 'https://www.anrdoezrs.net/click-101443244-15428313'     // IT (Italian)
+        };
+
+        // Detecta o idioma do navegador
+        const userLang = navigator.language.toLowerCase().substring(0, 2);
+        
+        // Redireciona para o link correspondente, ou para inglês como padrão
+        const redirectUrl = links[userLang] || links['en'];
+        
+        // Redireciona imediatamente
+        window.location.href = redirectUrl;
+    </script>
+</body>
+</html>
